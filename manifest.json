@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "stacknotifier",
+    "version": "0.1",
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "permissions": ["*://api.stackexchange.com/*", "webRequest", "webRequestBlocking", "tabs"],
+
+    "browser_action": {
+        "default_icon" : {
+            "19": "icons2/stackexchange-19.png",
+            "38": "icons2/stackexchange-38.png"
+        },
+        "default_popup": "popup/webext_popup.html",
+        "default_title": "notifier"
+    }
+}
